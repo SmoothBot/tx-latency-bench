@@ -72,7 +72,7 @@ Examples:
 ./target/release/tx-latency --type async --num 15 --rpc https://my-rpc.com --pkey 0x123456...
 
 # Using cargo run with the -- separator
-cargo run --release -- --num 20
+cargo run --bin tx-latency --release -- --num 20
 ```
 
 ## Output
