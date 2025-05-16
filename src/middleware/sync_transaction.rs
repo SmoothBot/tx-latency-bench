@@ -33,7 +33,7 @@ impl<M: Middleware> MiddlewareError for SyncMiddlewareError<M> {
 
 /// SyncTransactionMiddleware provides access to the `eth_sendRawTransactionSync` RPC method
 /// which both sends and waits for transaction receipt in a single call
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct SyncTransactionMiddleware<M> {
     inner: M,
 }
